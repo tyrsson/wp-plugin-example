@@ -9,10 +9,9 @@ use PP\Entity\Product;
 final class ProductTable extends AbstractTable
 {
     public function __construct(
-        protected \WP\Wpdb $wpdb,
         Product $entity
     ) {
-        parent::__construct($wpdb, $entity);
+        parent::__construct($entity);
     }
     public function getProduct()
     {

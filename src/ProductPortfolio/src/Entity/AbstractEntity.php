@@ -7,7 +7,6 @@ namespace PP\Entity;
 use Laminas\Stdlib\ArrayObject;
 use PP\EntityInterface;
 use Laminas\InputFilter\InputFilterAwareInterface;
-use Laminas\InputFilter\InputFilterAwareTrait;
 use Laminas\InputFilter\InputFilterInterface;
 
 abstract class AbstractEntity extends ArrayObject implements EntityInterface, InputFilterAwareInterface

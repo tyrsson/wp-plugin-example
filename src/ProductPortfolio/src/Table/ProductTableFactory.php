@@ -12,7 +12,7 @@ final class ProductTableFactory
     public function __invoke(ContainerInterface $container): ProductTable
     {
         return new ProductTable(
-            $container->get(\WP\Wpdb::class),
+            //$container->get(\WP\Wpdb::class),
             new Product(),
         );
     }

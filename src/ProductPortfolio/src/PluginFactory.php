@@ -10,6 +10,9 @@ final class PluginFactory
 {
     public function __invoke(ContainerInterface $container): Plugin
     {
-        return new Plugin($container->get(\PP\Table\ProductTable::class));
+        return new Plugin(
+            $container->get(\PP\Table\ProductTable::class),
+            $container->get('config')
+        );
     }
 }

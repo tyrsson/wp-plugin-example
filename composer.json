@@ -1,8 +1,5 @@
 {
     "autoload": {
-        "files": [
-            "src/WP/src/Wpdb.php"
-        ],
         "psr-4": {
             "PP\\": "src/ProductPortfolio/src/",
             "WP\\": "src/WP/src/"

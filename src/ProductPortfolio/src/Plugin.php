@@ -6,6 +6,7 @@ namespace PP;
 
 use PP\Entity\Product;
 use PP\Table\ProductTable;
+use Tracy\Debugger;
 
 final class Plugin
 {
@@ -14,6 +15,10 @@ final class Plugin
     public function run(): void
     {
         // Plugin logic goes here
-        \var_dump($this->productTable->getProduct());
+        $product = $this->productTable->getProduct();
+        Debugger::dump($product->id);
+        Debugger::dump($product->name);
+        Debugger::dump($product->price);
+        Debugger::dump($product->getArrayCopy());
     }
 }

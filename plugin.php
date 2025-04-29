@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
+use Tracy\Debugger;
+
 require 'vendor/autoload.php';
+
+Debugger::enable();
 
 /**
  * Self-called anonymous function that creates its own scope and keeps the global namespace clean.
